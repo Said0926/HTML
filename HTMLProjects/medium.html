@@ -1,10 +1,61 @@
-<!DOCTYPE html>
+<!--
+Задача 2 (Средняя): Форма обратной связи
+Требования:
+Создай HTML-форму для обратной связи с такими полями:
+
+Поле для ввода имени (input type="text").
+
+Поле для email (input type="email").
+
+Выпадающий список (select) с вариантами: "Вопрос", "Отзыв", "Сотрудничество".
+
+Радио-кнопки (radio) для выбора срочности: "Низкая", "Средняя", "Высокая".
+
+Текстовое поле (textarea) для сообщения.
+
+Кнопка "Отправить".
+Дополнительно: Добавь обязательные поля (атрибут required).
+-->
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-$END$
+  <label>Введите ваше имя:</label>
+  <input type="text">
+  <hr>
+
+  <label>Введите вашу почту:</label>
+  <input type="email">
+  <hr>
+
+  <select>
+    <option disabled selected>Выберите</option>
+    <option>Вопрос</option>
+    <option>Отзыв</option>
+    <option>Сотрудничество</option>
+  </select>
+  <hr>
+
+  <label>Выберите срочность задачи:</label>
+  <label>Низкая</label>
+  <input type="radio" name="state">
+  <label>Средняя</label>
+  <input type="radio" name="state">
+  <label>Высокая</label>
+  <input type="radio" name="state">
+  <hr>
+
+  <label for="story">Расскажите о себе:</label><br>
+  <textarea id="story" name="story" rows="5" cols="33"></textarea><br>
+  <hr>
+
+  <input type="submit" value="Отправить">
+
 </body>
 </html>
