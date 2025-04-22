@@ -1,0 +1,68 @@
+<!--Создание HTML форм и полей для ввода-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" method="post">
+    <label for="user_firstName">Введите имя</label>
+    <input type="text" placeholder="Введите имя" maxlength="15" name="user_firstName" id="user_firstName">
+    <hr>
+    <label>Введите фамилию</label>
+    <input type="text" value="Фамилия" maxlength="15" name="user_lastName" id="user_lastName">
+    <hr>
+    <label>Введите отчество</label>
+    <input type="text" value="Введите очтество" maxlength="15" disabled name="user_middleName" id="user_middleName">
+    <hr>
+    <label>Введите возраст</label>
+    <input type="text" placeholder="Введите возраст" maxlength="15" name="user_age" id="user_age">
+    <hr>
+
+    <label>Придумайте себе пароль:</label>
+    <input type="password" placeholder="Введите пароль" maxlength="12" name="user_password" id="user_password">
+    <hr>
+
+    <label>Введите вашу почту:</label>
+    <input type="email">
+    <hr>
+
+    <label>Подберите цвет:</label>
+    <input type="color">
+    <hr>
+
+    <label>Выберите подходящую дату</label>
+    <input type="date">
+    <hr>
+
+    <label>Выберите время</label>
+    <input type="time">
+    <hr>
+
+    <label>Поставьте галочку</label>
+    <input type="checkbox">
+    <hr>
+
+    <label>Выберите эту кнопку</label>
+    <input type="radio" name="state">
+    <label>Или эту кнопку</label>
+    <input type="radio" name="state">
+    <hr>
+
+    <label>Выберите файл</label>
+    <input type="file">
+    <hr>
+
+    <input type="button">
+    <hr>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
+
+  </form>
+</body>
+</html>
